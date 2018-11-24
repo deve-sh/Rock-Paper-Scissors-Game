@@ -13,7 +13,6 @@ function ucfirst(string){             // Function to capitalize the first charac
 rockpaperscissors.prototype.increasescore = function() {     // Function to increment the score of the user.
 	this.score+=1;
 	document.getElementsByClassName('score')[0].innerHTML=this.score; // Update Score Being Shown to User.
-	console.log("Plus One!");
 };
 
 rockpaperscissors.prototype.makemove = function(usersmove) {  
@@ -101,6 +100,11 @@ function starter(nmoves){        // Function to start a new Rock-Paper-Scissors 
 
 	if(document.getElementById('second')){
 		document.getElementById('second').outerHTML="";   // Remove the element.
+	}
+
+	if(document.getElementsByTagName('footer').length>0)
+	{
+		document.getElementsByTagName('footer')[0].outerHTML=""; // Remove the footer.
 	}
 	
 	var htmlscript="<div id='second'>";
