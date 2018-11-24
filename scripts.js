@@ -78,6 +78,6 @@ rockpaperscissors.prototype.checkwin = function() { // Function to check if the 
 	}
 };
 
-function starter(nmoves){        // Function to start a new Rock-Paper-Scissors game.
+function starter(nmoves=3){        // Function to start a new Rock-Paper-Scissors game.
 	game=new rockpaperscissors(nmoves);
 }
